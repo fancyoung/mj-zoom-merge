@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MidJourney Zoom out merge tool</title>
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"> -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <input type="file" id="fileUpload" multiple accept="image/*">
+    <div class="preview-wrapper">
+      <div id="preview"></div>
+    </div>
+    <button onclick="startSlideshow()">Start</button>
+    <button onclick="stopSlideshow()">Stop</button>
+    <div class="image-container-wrapper">
+      <div class="image-container" id="imageContainer">
+      </div>
+    </div>
+    <canvas id="canvas" width="512" height="512"></canvas>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+.preview-wrapper {
+  border: 1px dashed #ccc;
+  padding: 5px;
+}
+
+#preview img {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+
+.image-container-wrapper {
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.image-container {
+  position: relative;
+  height: 512px;
+  width: 512px;
+  overflow: hidden;
+}
+
+.image-container img {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  height: 1024px;
+  width: 1024px;
+  transition: transform 3s linear;
+  opacity: 1;
+}
+.image-container img.hide {
+  opacity: 0;
+}
+.image-container img.half-size {
+  transform: translate(0, 0) scale(0.5);
+}
